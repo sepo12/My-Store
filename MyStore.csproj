@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Clients\Create.cshtml.cs" />
+    <Compile Remove="Pages\Clients\Index.cshtml.cs" />
+    <Compile Remove="Pages\Clients\Index2.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Clients\Create.cshtml" />
+    <Content Remove="Pages\Clients\Index.cshtml" />
+    <Content Remove="Pages\Clients\Index2.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Clients\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Clients\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Clients\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Clients\Create.cshtml" />
+  </ItemGroup>
+
+</Project>
